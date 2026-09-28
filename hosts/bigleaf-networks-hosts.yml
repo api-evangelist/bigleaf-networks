@@ -1,0 +1,119 @@
+generated: '2026-09-28'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 8
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - other
+  - partner
+  - status
+  - support
+  - website
+hosts:
+- host: api.bigleaf.net
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bigleaf.net
+  role: api
+  relation: own
+- host: app-retail.bigleaf.net
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bigleaf.net
+  role: other
+  relation: own
+- host: app.bigleaf.net
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bigleaf.net
+  role: other
+  relation: own
+- host: partner.bigleaf.net
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  title: Bigleaf Networks
+  status: 200
+  registrable_domain: bigleaf.net
+  role: partner
+  relation: own
+- host: status.bigleaf.net
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: bigleaf.net
+  role: status
+  relation: own
+- host: support.bigleaf.net
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: bigleaf.net
+  role: support
+  relation: own
+- host: trust.bigleaf.net
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bigleaf.net
+  role: other
+  relation: own
+- host: www.bigleaf.net
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - PrivacyPolicy
+  - Pricing
+  - Newsroom
+  - Leadership
+  - Blog
+  - Website
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: bigleaf.net
+  role: website
+  relation: own

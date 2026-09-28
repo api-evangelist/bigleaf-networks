@@ -1,23 +1,83 @@
 aid: bigleaf-networks
+
 name: Bigleaf Networks
-description: 'Bigleaf Networks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bigleaf.net/wp-content/uploads/2026/04/Blog-Featured-Images-2026Circuit-Data-Metering-1.webp
+
+description: 'Bigleaf Networks provides cloud‑managed WAN optimization and connectivity solutions, delivering real‑time traffic optimization, hybrid WAN, 5G integration, and reliable internet redundancy for enterprises. Their platform improves performance, uptime, and simplifies network management across multiple locations and devices.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bigleaf-networks/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
+- Cloud-Managed WAN
+- Network Optimization
+- Hybrid WAN
+- 5G Integration
+- Enterprise Connectivity
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/bigleaf-networks-llms.txt
+- type: SecurityTxt
+  url: well-known/bigleaf-networks-status-security.txt
+- type: WellKnown
+  url: well-known/bigleaf-networks-well-known.yml
+- type: Hosts
+  url: hosts/bigleaf-networks-hosts.yml
+- type: Vendors
+  url: vendors/bigleaf-networks-vendors.yml
+- type: Support
+  url: https://support.bigleaf.net/hc/en-us
+- type: StatusPage
+  url: https://status.bigleaf.net/
+- type: PrivacyPolicy
+  url: https://www.bigleaf.net/privacy-policy/
+- type: Pricing
+  url: https://www.bigleaf.net/blog/price-vs-value-in-network-connectivity/
+- type: Newsroom
+  url: https://www.bigleaf.net/company/news/?1=1
+- type: Leadership
+  url: https://www.bigleaf.net/company/leadership/
+- type: Blog
+  url: https://www.bigleaf.net/blog/
+- type: DomainSecurity
+  url: security/bigleaf-networks-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.bigleaf.net/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine‑readable contract found at the API host (api.bigleaf.net) after probing common spec endpoints.
+  evidence:
+    - url: https://api.bigleaf.net/openapi.json
+      status: 404
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
